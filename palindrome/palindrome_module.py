@@ -10,9 +10,10 @@ def palindrome(str):
         if letter == letters[-1]:
             letters.pop(-1)
         else:
+            print(("{} is not a palindrome").format(str))
             palindrome = False
             break
-
+    print(("{} is a palindrome").format(str))
     return palindrome
 
 def main():
